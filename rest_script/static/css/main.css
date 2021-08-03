@@ -20,16 +20,21 @@ ul#navigation-list {
 }
 
 /* For the inline of the navigation text */
-ul#navigation-list li, ul#navigation-list a {
+ul#navigation-list li {
     display: inline;
-    text-decoration: none; /* this gets rid of the underline */
-    padding: 1vw;
+    padding: 40px;
     color: black;
+    font-weight: bold;
+}
+
+ul#navigation-list a {
+    text-decoration: none; /* this gets rid of the underline */
+    padding: 10px;
 }
 
 /* For the border of the last element in navigation text */
 #navigation-list a:nth-last-child(1) {
-    border: 2px solid black;
+    border: 3px solid blue;
     border-radius: 10px;
     margin-right: 0.2vw;
 }
@@ -42,6 +47,7 @@ ul#navigation-list li, ul#navigation-list a {
 /* Image1 */
 .image1 img {
     max-width: 100%;
+    padding-top: 55px;
 }
 
 /* More text */
@@ -114,21 +120,13 @@ ul#navigation-list li, ul#navigation-list a {
     max-width: 100%;
 }
 
-.footer-text-flex {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3vw; 
-}
-
 #footer {
     border-top: 3px solid black;
-    margin-top: 20vh;
+    margin-top: 5vh;
 }
 
-.entire-pic img{
+#finalimage img{
     max-width: 100%;
-    max-height: 100%;
-    width: 30%;
-    padding-top: 25px;
+    padding-top: 55px;
 }
 
