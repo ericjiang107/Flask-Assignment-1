@@ -1,0 +1,134 @@
+/* Navbar styles */
+.header-nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+/* For the image in the navigation bar */
+.header-nav-bar img {
+    width: 35%;
+    max-width: 100%;
+    margin-left: 2vw; 
+    /* view width takes into account how someone views the image/text compared to a pixel */
+}
+
+/* For the navigation bar */
+ul#navigation-list {
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 2.5vw;
+}
+
+/* For the inline of the navigation text */
+ul#navigation-list li, ul#navigation-list a {
+    display: inline;
+    text-decoration: none; /* this gets rid of the underline */
+    padding: 1vw;
+    color: black;
+}
+
+/* For the border of the last element in navigation text */
+#navigation-list a:nth-last-child(1) {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 0.2vw;
+}
+
+/* For padding of 2nd row */
+.containermid {
+    padding-top: 20px;
+}
+
+/* Image1 */
+.image1 img {
+    max-width: 100%;
+}
+
+/* More text */
+#joinus-text {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Button adjustment */
+.glory {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/* For the h5 text */
+.h5center {
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* Middle Text */
+.middle-text {
+    padding-top: 3vw;
+    text-align: center;
+    margin: center;
+    padding-bottom: 10px;
+}
+
+/* <p> adjustment */
+.paragraph1 {
+    text-align: center;
+    margin: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#moreimages1 img{
+    width: 85%;
+    max-width: 100%;
+}
+
+#moreimages2 img{
+    width: 75%;
+    max-width: 100%;
+}
+
+#moreimages3 img{
+    width: 95%;
+    max-width: 100%;
+}
+
+.col {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+#moreimages4 img{
+    width: 95%;
+    max-width: 100%;
+}
+
+#moreimages5 img{
+    width: 75%;
+    max-width: 100%;
+}
+
+#moreimages6 img{
+    width: 75%;
+    max-width: 100%;
+}
+
+.footer-text-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw; 
+}
+
+#footer {
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
+
+.entire-pic img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 30%;
+    padding-top: 25px;
+}
+
