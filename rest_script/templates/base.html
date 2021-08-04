@@ -34,14 +34,14 @@
                             Bandai Shop
                         </li>
                     </a>
-                    <a href="https://www.youtube.com/">
+                    <a href="{{ url_for('auth.signin') }}">
                         <li>
-                            See the Winners
+                            See the Winners/Sign in
                         </li>
                     </a>
-                    <a href="https://www.youtube.com/">
+                    <a href="{{ url_for('auth.signup') }}">
                         <li>
-                            Create an Account
+                            Sign Up
                         </li>
                     </a>
                 </ul>
@@ -50,12 +50,6 @@
     </div>
     {% block content %}
     {% endblock content %}
-<!--     
-    <div class="movie">
-        <video loop muted autoplay poster="">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </div> -->
 
 
       
