@@ -1,3 +1,5 @@
 day_1_homework
 
 __pycache__
+.env
+.DS_Store
