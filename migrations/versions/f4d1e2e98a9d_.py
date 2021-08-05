@@ -25,6 +25,7 @@ def upgrade():
     sa.Column('token', sa.String(), nullable=True),
     sa.Column('date_created', sa.DateTime(), nullable=False),
     sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('email'),
     sa.UniqueConstraint('token')
     )
     # ### end Alembic commands ###
