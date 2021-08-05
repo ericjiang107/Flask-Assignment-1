@@ -1,0 +1,26 @@
+<main class="containeraccount">
+    <div class="row">
+        <aside class="col-12 col-md-6">
+            <h2>
+                Create Your Free Account
+            </h2>
+            <form method='POST'>
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    <!-- Email Here -->
+                    <fieldset id="email-field">
+                        {{ form.email.label }}
+                        {{ form.email(class="form-control", placeholder = "Place Email Here...") }}
+                    </fieldset>
+                    <!-- Password Here -->
+                    <fieldset id="password-field">
+                        {{ form.password.label }}
+                        {{ form.password(class="form-control", placeholder = "Place Password Here...") }}
+                    </fieldset>
+                    <!-- Submit Button Here -->
+                    {{ form.submit_button(class="btn btn-primary btn-block") }}
+                </div>
+            </form>
+        </aside>
+    </div>
+</main>

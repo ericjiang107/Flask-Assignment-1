@@ -21,7 +21,7 @@
 .header-nav-bar img {
     width: 35%;
     max-width: 100%;
-    margin-left: 2vw; 
+    margin-right: 5vw; 
     /* view width takes into account how someone views the image/text compared to a pixel */
 }
 
@@ -150,3 +150,16 @@ ul#navigation-list a {
 .containeraccount {
     padding: 20px;
 }
+
+/* Flash */
+.flashcontainer {
+    color: black;
+    font-size: 25px;
+    background: lightblue;
+}
+
+/* Profile email */
+.containername {
+    text-align: center;
+}
+

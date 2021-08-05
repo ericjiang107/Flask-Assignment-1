@@ -5,17 +5,25 @@ import uuid
 
 
 # Security for passwords
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # creation of tokens for API
 import secrets 
 
+from flask_login import LoginManager, UserMixin
+
 db = SQLAlchemy()
 
-class User(db.Model):
+login_manager = LoginManager()
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
+
+class User(db.Model, UserMixin):
     id = db.Column(db.String, primary_key = True)
     email = db.Column(db.String(150), nullable = False)
-    password = db.Column(db.String, nullable = True)
+    password = db.Column(db.String, nullable = False)
     token = db.Column(db.String, unique = True, default = '')
     date_created = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)
 

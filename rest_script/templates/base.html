@@ -15,14 +15,12 @@
     <div class="Nav_container">
         <nav class="header-nav-bar">
             <div>
-                <img src="../static/images/GBWC2020_thumb.png" alt="Logo">
+                <a href="{{ url_for('site.home') }}">
+                    <img src="../static/images/GBWC2020_thumb.png" alt="Logo">
+                </a>
             </div>
             <div>
                 <ul id="navigation-list">
-                    <a href="https://www.youtube.com/">
-                        <li>
-                            Timeline
-                        </li>
                     </a>
                     <a href="https://www.youtube.com/">
                         <li>
@@ -34,16 +32,29 @@
                             Bandai Shop
                         </li>
                     </a>
-                    <a href="{{ url_for('auth.signin') }}">
-                        <li>
-                            See the Winners/Sign in
-                        </li>
-                    </a>
-                    <a href="{{ url_for('auth.signup') }}">
-                        <li>
-                            Sign Up
-                        </li>
-                    </a>
+                    {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('auth.logout') }}">
+                            <li>
+                                Log Out
+                            </li>
+                        </a>
+                        <a href="{{ url_for('site.profile') }}">
+                            <li>
+                                Profile
+                            </li>
+                        </a>
+                    {% else %}
+                        <a href="{{ url_for('auth.signin') }}">
+                            <li>
+                                Sign in
+                            </li>
+                        </a>
+                        <a href="{{ url_for('auth.signup') }}">
+                            <li>
+                                Sign Up
+                            </li>
+                        </a>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
