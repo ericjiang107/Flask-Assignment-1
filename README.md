@@ -8,4 +8,4 @@ Day 3: Added responsiveness to Signin and Signup nav bars. Made logo transparent
 Day 4: Updated responsiveness to Signin and Signup nav bars and created CRUD API routes allowing "CREATE", "RETRIEVE", "UPDATE", and "DELETE." PGAdmin updates with added info from Insomnia.exe. 
 
 Website Look (All video rights go to its respective owner, please check his channel out!):
-<a href="https://imgflip.com/gif/5iq9ub">via Imgflip</a>
+<a href="https://imgflip.com/gif/5iq9ub"></a>
