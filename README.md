@@ -4,3 +4,5 @@ Day 2: Re-styled website with video. Logo issues due to transparency -- Linked u
 Video link: https://www.youtube.com/watch?v=eX_qjj5s12I&t=1s
 
 Day 3: Added responsiveness to Signin and Signup nav bars. Made logo transparent so it fits more smoothly onto the video. 
+
+Day 4: Updated responsiveness to Signin and Signup nav bars and created CRUD API routes allowing "CREATE", "RETRIEVE", "UPDATE", and "DELETE." PGAdmin updates with added info from Insomnia.exe. 
